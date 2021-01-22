@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import ReactTable from "react-table-6";
 import "react-table-6/react-table.css"
 
-//utilisation de swr pour plus flixiblité de fetching vous pover consulter mon article sur swr
+//utilisation de swr pour plus flixiblité de fetching vous pouvez consulter mon article sur swr
 //---> https://aboujaafar-othmane.medium.com/useswr-best-react-hook-fetch-library-7038ddbe9e3a
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
@@ -77,8 +77,8 @@ function App() {
     <div className="container">
 
       <div className="row">
-        <div class="form-group col-4">
-          <label for="exampleFormControlSelect1">Filtrer par categorie :</label>
+        <div className="form-group col-4">
+          <label htmlFor="exampleFormControlSelect1">Filtrer par categorie :</label>
           <select className="form-control" onChange={(e) => { filter(e) }}>
             {options}
           </select>
